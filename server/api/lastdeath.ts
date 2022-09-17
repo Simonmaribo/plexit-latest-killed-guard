@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
 
     event.res.setHeader("Content-Type", "application/json");
     event.res.setHeader("Access-Control-Allow-Origin", "*");
-    event.res.setHeader("Cache-Control", "max-age=60, public");
+    event.res.setHeader("Cache-Control", "s-maxage=60, public");
 
 
     return {
