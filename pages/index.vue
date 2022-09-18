@@ -110,6 +110,9 @@ export default {
         setInterval(() => {
             this.update();
         }, 1000);
+        setInterval(() => {
+            this.fetchData();
+        }, 180*1000);
     },
 }
 </script>
